@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Nadalin</title>
+    <link rel="stylesheet" href="style,.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Daniel Nadalin</div>
+            <button class="menu-button" id="menu-toggle">Menu</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#sobre-mim">QUEM SOU</a></li>
+                <li><a href="#github-section">GITHUB</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+            <div class="icons-header">
+                <img src="moon (1).png" alt="lua" id="theme-toggle" style="cursor: pointer;">
+                <img src="moon (2).png" alt="luabranca" id="theme-toggle-light" style="cursor: pointer; display: none;">
+
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="content">
+            <h1>BEM VINDO!</h1>
+            <p>
+                <span id="animated-text"></span>
+                <br>
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">
+                    <img src="linkedin (1).png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/seu-perfil" target="_blank">
+                    <img src="insta.png" alt="Instagram">
+                </a>
+                <a href="mailto:seuemail@gmail.com" target="_blank">
+                    <img src="gmail.png" alt="Email">
+                </a>
+                <a href="https://github.com/seu-perfil" target="_blank">
+                    <img src="githublogo.png" alt="GitHub">
+                </a>
+            </div>
+            <a href="#sobre-mim" class="btn">Saber Mais</a>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var options = {
+                strings: ["Eu sou o Daniel!"],
+                typeSpeed: 50,
+                backSpeed: 25,
+                loop: false,
+            };
+
+            var typed = new Typed('#animated-text', options);
+        });
+
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+    
+    <section id="sobre-mim" class="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <h1>Conheça o Daniel</h1>
+        <p>
+            Sou um jovem de 17 anos, estudante do Cotemig, em Belo Horizonte, com grande paixão por futebol e o sonho de seguir uma carreira no jornalismo esportivo, especialmente voltado para o universo do futebol. Atualmente, sou estagiário na <a href="https://www.instagram.com/digitalkaktos/">Agência Kaktos</a>, onde tenho a oportunidade de aprender e me desenvolver profissionalmente. Embora aprecie momentos de tranquilidade e paz, estou sempre aberto a novas experiências e desafios, buscando crescer e explorar diferentes caminhos.
+        </p>
+        <div class="icons">
+            <div class="icon-container">
+                <img src="futebol.png" alt="Futebol">
+            </div>
+            <div class="icon-container">
+                <img src="avaliacao.png" alt="Estrelas">
+            </div>
+            <div class="icon-container">
+                <img src="cruz.png" alt="Cruz">
+            </div>
+            <div class="icon-container">
+                <img src="tranquilo.png" alt="Meditação">
+            </div>
+        </div>
+    </section>
+    
+    <div class="faixa-azul"></div>
+
+    <section id="projetos" class="projetos">
+        <h2>PROJETOS</h2>
+        <p>Confira abaixo alguns projetos realizados por mim</p>
+        <br>
+        <div class="projetos-grid">
+            <div class="projeto-item">
+                <img src="WhatsApp Image 2024-09-23 at 10.44.22 PM.jpeg" alt="Projeto 1">
+                <a href="https://danielrnvcc.github.io/Site-welcome-cotemig/" class="btn-projeto">Ver Projeto</a>
+            </div>
+            <div class="projeto-item">
+                <img src="delizie.jpeg" alt="Projeto 2">
+                <a href="https://danielrnvcc.github.io/Site-figma-html/" class="btn-projeto">Ver Projeto</a>
+            </div>
+            <div class="projeto-item">
+                <img src="ogani.jpeg" alt="Projeto 3">
+                <a href="https://danielrnvcc.github.io/Site-ogani-/" class="btn-projeto">Ver Projeto</a>
+            </div>
+            <div class="projeto-item">
+                <img src="cotemigtech.jpeg" alt="Projeto 4">
+                <a href="https://danielrnvcc.github.io/Reprodu-o-do-site-cotemig/" class="btn-projeto">Ver Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="linha-azul"></div>
+
+    <section class="habilidades">
+        <h2>COMO EU POSSO TE AJUDAR?</h2>
+        <p>Veja algumas de minhas habilidades</p>
+        <div class="habilidades-grid">
+            <div class="habilidade-item">
+                <img src="apoio-suporte.png" alt="Trabalho em Equipe">
+                <h3>TRABALHO EM EQUIPE</h3>
+                <p>Colaboro efetivamente para alcançar objetivos comuns em equipe.</p>
+            </div>
+            <div class="habilidade-item">
+                <img src="imagem_2024-09-23_230418232-removebg-preview.png" alt="Criatividade">
+                <h3>CRIATIVIDADE</h3>
+                <p>Trago soluções inovadoras para desafios cotidianos.</p>
+            </div>
+            <div class="habilidade-item">
+                <img src="conversacliente.png" alt="Atendimento ao Cliente">
+                <h3>ATENDIMENTO AO CLIENTE</h3>
+                <p>Presto um atendimento atencioso e focado em superar as expectativas dos clientes.</p>
+            </div>
+            <div class="habilidade-item">
+                <img src="observacao.png" alt="Observações">
+                <h3>OBSERVAÇÕES</h3>
+                <p>Atenção aos detalhes me ajuda a identificar melhorias e oportunidades.</p>
+            </div>
+            <div class="habilidade-item">
+                <img src="bate-papo.png" alt="Comunicação">
+                <h3>COMUNICAÇÃO</h3>
+                <p>Consigo me comunicar facilmente com as pessoas e criar boas interações rapidamente.</p>
+            </div>
+            <div class="habilidade-item">
+                <img src="habilidadesdiversas222.png" alt="Habilidades Diversas">
+                <h3>HABILIDADES DIVERSAS</h3>
+                <p>Possuo habilidades diversas que envolvem a criação de conteúdo multimídia, utilizando ferramentas da Google, Microsoft e redes sociais.</p>
+            </div>
+        </div>
+        <a href="#contato" class="btn-fale">FALE COMIGO!</a>
+    </section>
+
+    <section id="github-section" class="github-section">
+        <div class="github-content">
+            <img src="imagem_2024-09-23_221329154-removebg-preview-removebg-preview.png" alt="GitHub" class="github-logo">
+        </div>
+        <div class="github-text">
+            <h2>ACESSE MEU GITHUB!</h2>
+            <p>Veja todos meus projetos dentro do Github! Para acessar clique no botão abaixo.</p>
+            <a href="https://github.com/danielrnvcc" class="access-btn">ACESSAR</a>
+        </div>
+    </section> 
+
+    <section id="contato" class="contact-section">
+        <div class="contact-section">
+            <div class="contact-form">
+                <h2>Fale comigo!</h2>
+                <p>Preencha o formulário abaixo e entre em contato agora mesmo!</p>
+                <form>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Seu nome" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seuemail@gmail.com" required>
+                    
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" placeholder="Sua mensagem" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="contact-image">
+                <img src="Green and Yellow Illustrative Delivery Logo (9).png" alt="People Chatting Illustration">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="imagem_2024-10-27_195541223-removebg-preview.png" alt="Book image">
+            </div>
+            <div class="footer-center">
+                <h3>Fale comigo</h3>
+                <p>(31) 99772-5445</p>
+                <p>danielrnadalin@gmail.com</p>
+            </div>
+            <div class="footer-right">
+                <h3>Siga nas redes</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="linkedin (1).png" alt="LinkedIn"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="gmail.png" alt="GitHub"></a>
+                    <a href="#"><img src="githublogo.png" alt="Medium"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Links</h3>
+                <p><a href="#sobre-mim">Sobre mim</a></p>
+                <p><a href="#projetos">Projetos</a></p>
+                <p><a href="#github-section">Github</a></p>
+                <p><a href="#contact-section">Contato</a></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+<script>
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var options = {
+            strings: [
+                "Eu sou o Daniel!",
+                "Sou um estudante de 17 anos do Colégio Cotemig e estagiário da Agência Kaktos."
+            ],
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 1000,
+            loop: true,
+        };
+
+        var typed = new Typed('#animated-text', options);
+    });
+</script>
+
+<script>
+const toggleButton = document.getElementById('theme-toggle');
+const toggleLightButton = document.getElementById('theme-toggle-light');
+
+toggleButton.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    toggleButton.style.display = 'none';
+    toggleLightButton.style.display = 'inline-block';
+});
+
+toggleLightButton.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    toggleLightButton.style.display = 'none';
+    toggleButton.style.display = 'inline-block';
+});
+</script>
+
+<script>
+    document.querySelectorAll('.nav-links a, .btn').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    });
+</script>
+
+<script>
+    document.querySelector('.dropdown-toggle').addEventListener('click', function() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+});
+</script>
